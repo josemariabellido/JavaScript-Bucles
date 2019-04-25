@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+           var sumatotal = 0;
+           var contador = 0;
+           var contador = 0;
+           var media = 0;
+           var x = parseInt(prompt("Escribe un numero: "));
+           while (x!=0){
+            sumatotal = sumatotal + x;
+            contador ++;
+             media = sumatotal / contador;
+             x =  parseInt(prompt("Escribe un numero: "));
+
+
+           }
+    $(".sumatotal").html("La suma total es: " + sumatotal);
+    $(".media").html("La media es: " + media);
+
+        });
+        
+        
+        
+        
+        </script>
+</head>
+<body>
+   <p class="sumatotal"></p> 
+   <p class="media"></p>
+</body>
+</html>
